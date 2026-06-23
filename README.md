@@ -1,16 +1,20 @@
-# React + Vite
+# Think Tank
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal project management app for tracking ideas from concept to completion.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Think Tank lets you create and manage projects, each with a status, priority, description, notes, tags, tasks, and features. Projects live in your browser via localStorage — no account or backend needed.
 
-## React Compiler
+- **Home view** — card grid of all your projects, filterable by status, with a light/dark mode toggle
+- **Project cards** — show title, priority, status badge, description, and tags at a glance. Expand a card with the arrow to see tasks and check them off without opening the project
+- **Project editor** — full edit view with a local draft system: changes aren't committed until you hit Save, so you can freely discard edits
+- **Tasks** — add, complete, and delete tasks per project
+- **Features** — track individual features with their own status (planned → in progress → testing → built)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React 19 + Vite 8
+- Inline styles throughout, CSS custom properties for light/dark theming
+- localStorage for persistence
+- No external UI libraries or backend
